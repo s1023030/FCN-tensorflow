@@ -14,7 +14,7 @@ def draw_Gaussian_distribution(centerX,centerY,img_w,img_h,amplitude=255,stdx=10
     combine=(x+y)*(-1)
     final=amplitude*np.exp(combine)
     return final
-def next_batch(img_dir_path='',index_path='',img_width=640,img_height=480,batch_size=10,now_at=0):
+def next_batch(img_dir_path='',index_path='',img_height=480,img_width=640,batch_size=10,now_at=0):
     X=np.empty([batch_size,img_height,img_width,3])
     Y=np.empty([batch_size,img_height,img_width,16])
     raw_datas= open(index_path).readlines()
