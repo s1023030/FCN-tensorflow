@@ -1,7 +1,7 @@
 import numpy as np
 import cv2
 import json
-def draw_Gaussian_distribution(centerX,centerY,img_w,img_h,amplitude=255,stdx=100,stdy=100):
+def draw_Gaussian_distribution(centerX,centerY,img_w,img_h,amplitude=1,stdx=100,stdy=100):
     stdx=stdx^2
     stdy=stdy^2
     x,y = np.meshgrid(np.linspace(0,img_w,img_w), np.linspace(0,img_h,img_h))
