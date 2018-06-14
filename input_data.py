@@ -1,7 +1,7 @@
 import numpy as np
 import cv2
 import json
-def draw_Gaussian_distribution(centerX,centerY,img_w,img_h,amplitude=1,stdx=50,stdy=50):
+def draw_Gaussian_distribution(centerX,centerY,img_w,img_h,amplitude=1,stdx=15,stdy=15):
     stdx=stdx^2
     stdy=stdy^2
     x,y = np.meshgrid(np.linspace(0,img_w,img_w), np.linspace(0,img_h,img_h))
@@ -12,9 +12,9 @@ def draw_Gaussian_distribution(centerX,centerY,img_w,img_h,amplitude=1,stdx=50,s
     x=x/(2*stdx)
     y=y/(2*stdy)
     combine=(x+y)*(-1)
-    final=amplitude*np.exp(combine)
+    final=amplitude*np.exp(combine)+1e-15
     return final
-def xy_next_batch(img_dir_path='',index_path='',img_height=480,img_width=640,batch_size=10,now_at=0):
+def xy_next_batch(img_dir_path='',index_path='',img_height=480,img_width=360,batch_size=10,now_at=0):
     X=np.empty([batch_size,img_height,img_width,3])
     Y=np.empty([batch_size,img_height,img_width,16])
     raw_datas= open(index_path).readlines()
