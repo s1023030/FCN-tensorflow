@@ -2,9 +2,5 @@ mpii_human_pose_v1
 mpii_human_pose_v1_u12_2
 .ipynb_checkpoints
 train_data
-<<<<<<< HEAD
-store
-=======
 model
 practice
->>>>>>> hourglass and regression practice
