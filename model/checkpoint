@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 model_checkpoint_path: "model_hg_16.ckpt"
 all_model_checkpoint_paths: "model_hg_0.ckpt"
 all_model_checkpoint_paths: "model_hg_1.ckpt"
@@ -16,3 +17,8 @@ all_model_checkpoint_paths: "model_hg_13.ckpt"
 all_model_checkpoint_paths: "model_hg_14.ckpt"
 all_model_checkpoint_paths: "model_hg_15.ckpt"
 all_model_checkpoint_paths: "model_hg_16.ckpt"
+=======
+model_checkpoint_path: "model_hg_1.ckpt"
+all_model_checkpoint_paths: "model_hg_0.ckpt"
+all_model_checkpoint_paths: "model_hg_1.ckpt"
+>>>>>>> hourglass and regression practice
